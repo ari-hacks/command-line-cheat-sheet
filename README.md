@@ -1,5 +1,5 @@
 # command-line-cheat-sheet
-A place to quickly lookup commands ( bash, git, AWS, Docker )
+A place to quickly lookup commands ( bash, git, AWS, Docker, Terraform, Ansible)
 
 
 - [x] [Bash](/bash.sh)
@@ -7,6 +7,4 @@ A place to quickly lookup commands ( bash, git, AWS, Docker )
 - [x] [AWS](/aws.sh)
 - [x] [Docker](/docker.sh)
 - [x] [Terraform](/terraform.sh) 
-- [x] [Ansible](/aws.sh)
-
-[Check for bugs in your shell script here! ](https://www.shellcheck.net/)  🖥️
+- [x] [Ansible](/ansible.sh)
