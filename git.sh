@@ -28,6 +28,7 @@ git branch -d [branch-name]    #Deletes the specified branch
 git fetch                     #Downloads all history from the remote tracking branches
 git merge                     #Combines remote tracking branch into current local branch
 git push                      #Uploads all local branch commits to GitHub
+git push origin master
 git pull                      #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
 ######################
 #Make Changes 

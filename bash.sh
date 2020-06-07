@@ -5,7 +5,7 @@ echo    #Prints text to the terminal
 cd 
 -
 ..
-~
+~      #Home 
 pwd 
 cat 
 touch   #Creates a file 
@@ -21,3 +21,80 @@ man
 --help
 clear 
 env     #Displays all environment variables
+
+
+######################
+#Directories 
+######################
+pwd #Display path of current working direcotry 
+
+
+######################
+#Files 
+######################
+
+######################
+#Search Files  
+######################
+
+######################
+#Search 
+######################
+
+######################
+#Output  
+######################
+
+
+######################
+#Network 
+######################
+
+
+######################
+#Permissions 
+######################
+
+######################
+#Process  
+######################
+
+######################
+#Help 
+######################
+
+######################
+#CTRL 
+######################
+
+######################
+#File Permissions  
+######################
+
+######################
+#Conditional Commands  
+######################
+
+######################
+#Arrow Keys  
+######################
+
+
+######################
+#Directing Output 
+######################
+
+
+
+######################
+#System Basics  
+######################
+date        #Show date and time
+uptime      #Display system uptime
+cal         #Show calendar
+w           #Display who is logged in
+whoami      #Display effective username
+finger user #Show info about user
+df          #Display free disk space
+du          #Display disk usage stats
+free        #Show memory and swap usage

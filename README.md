@@ -4,10 +4,10 @@ A place to quickly lookup commands ( bash, git, AWS, Docker, Terraform, Ansible)
 
 - [x] [Bash](/bash.sh)
 - [x] [Git](/git.sh)
-- [x] [AWS](/aws.sh)
+- [ ] [AWS](/aws.sh)
 - [x] [Docker](/docker.sh)
-- [x] [Terraform](/terraform.sh) 
-- [x] [Ansible](/ansible.sh)
+- [ ] [Terraform](/terraform.sh) 
+- [ ] [Ansible](/ansible.sh)
 
 ## Additional Resources 
   - [Bash Scripting](https://devhints.io/bash)
