@@ -55,7 +55,7 @@ git reset --hard [commit]   #Discards all history and changes back to the specif
 #Adding a Git Remote
 ######################
 git remote add [remote-name][remote-url]
-git remote -v   #List the remote connections
+git remote -v   #Verify the remote connections
 
 ######################
 #Conditionals 

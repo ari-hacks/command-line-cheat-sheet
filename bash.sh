@@ -16,6 +16,12 @@ uname -a        #Show system and kernel
 mount           #Show mounted filesy­stems
 man <command>   #Show manual for command
 clear           #Clears the command line window 
+history         #Show command history 
+hostname        #Get the current hostname 
+users           #Get the curent users 
+env             #Get all info about the environment
+exit            #Exit Terminal 
+
 
 ######################
 #Directory Operations
@@ -48,7 +54,7 @@ CTRL-r         #Search history
 !abc           #Run last command starting with abc
 !abc:p         #Print last command starting with abc
 !$             #Last argument of previous command
-
+        
 ######################
 #Files    
 ######################
@@ -85,7 +91,7 @@ top                 #Output real time processes
 kill <pid>          #Kill process with id pid
 pkill <name>        #Kill process with name name
 killall <name>      #Kill all processes with names beginning name
-
+ps aux | grep <processes>   #Output running <processes>
 ######################
 #Network    
 ######################

@@ -54,3 +54,15 @@ system          #Manage Docker
 template*       #Quickly scaffold services (Docker Enterprise)
 trust           #Manage trust on Docker images
 volume          #Manage volumes
+
+
+#######
+#Docker Compose 
+#######
+docker-compose start
+docker-compose stop
+docker-compose pause
+docker-compose unpause
+docker-compose ps
+docker-compose up
+docker-compose down
