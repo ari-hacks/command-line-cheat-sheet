@@ -6,7 +6,7 @@ A place to quickly lookup commands ( bash, git, AWS, Docker, Terraform, Ansible)
 - [x] [Git](/git.sh)
 - [ ] [AWS](/aws.sh)
 - [x] [Docker](/docker.sh)
-- [ ] [Terraform](/terraform.sh) 
+- [x] [Terraform](/terraform.sh) 
 - [ ] [Ansible](/ansible.sh)
 
 ## Additional Resources 
