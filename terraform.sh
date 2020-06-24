@@ -57,7 +57,7 @@ terraform fmt                               #Formats configuration files
 -list=false                                 #Don't lisst the files containing formatting inconsistencies 
 -write=false                                #Don't overwrite the input files. (This is implied by -check or when the input is STDIN.)
 -diff                                       #Display diffs of formatting changes
--check                                      #Check if the input is formatted. Exit status will be 0 if all input is properly formatted and non-zero otherwise.
+-check                                       #Check if the input is formatted. Exit status will be 0 if all input is properly formatted and non-zero otherwise.
 -recursive                                  #Also process files in subdirectories. By default, only the given directory (or current directory) is processed.
 
 #########
@@ -78,3 +78,16 @@ terraform workspace new dev            #Creates a new workspace and then selects
 terraform workspace select dev         #Selects a workspace 
 terraform workspace list               #List workspaces 
 
+###########
+#More CLI  
+###########
+terraform taint                       #Marks a resource as tainted, forcing it to be destroyed and recreated on the next apply
+
+# terraform taint flags: terraform taint [options] address
+#address argument is the address of the resource to mark as tainted. 
+-allow-missing                       #If specified, the command will succeed (exit code 0) even if the resource is missing. The command can still error, but only in critically erroneous cases.
+-backup=path                         #Path to the backup file. Defaults to -state-out with the ".backup" extension. Disabled by setting to "-".
+-lock=true                           #Lock the state file when locking is supported.
+-lock-timeout=0s                     #Duration to retry a state lock.
+-state=path                          #Path to read and write the state file to. Defaults to "terraform.tfstate". Ignored when remote state is used.
+-state-out=path                      #Path to write updated state file. By default, the -state path will be used. Ignored when remote state is used.
