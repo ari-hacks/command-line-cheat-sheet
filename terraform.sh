@@ -53,6 +53,13 @@ dot web.dot -Tsvg -o web.svg]               #Creates a graph and saves it as a .
 terraform validate                          #Checks the syntax, validates the configuration files, and returns any errors 
 terraform fmt                               #Formats configuration files 
 
+# terraform fmt flags: terraform fmt [options] [DIR]
+-list=false                                 #Don't lisst the files containing formatting inconsistencies 
+-write=false                                #Don't overwrite the input files. (This is implied by -check or when the input is STDIN.)
+-diff                                       #Display diffs of formatting changes
+-check                                      #Check if the input is formatted. Exit status will be 0 if all input is properly formatted and non-zero otherwise.
+-recursive                                  #Also process files in subdirectories. By default, only the given directory (or current directory) is processed.
+
 #########
 #providers 
 #########
