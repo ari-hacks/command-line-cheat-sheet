@@ -58,6 +58,21 @@ terraform plan                              #Scans all *.tf files in your dir an
 #apply 
 ########
 terraform apply                             #Applies execution plan and builds the stack
+# terraform destory flags: terraform init [options] [DIR]
+-backup=path                               #Path to the backup file 
+-compact-warnings                          #Warning messages are shown in compact form
+-lock=true                                 #Lock the state file when its supported
+-lock-timeout=0s                           #Time to retry a state lock
+-input=true                                #Get input if not set
+-auto-approve                              #Skip approval prompt 
+-no-color                                  #No color with the output 
+-parallelism=n                             #Deaults to 10, limit the number of concurrent operations
+-refresh=true                              #Updates the state for each resource before planning and applying
+-state=path                                #Path to the state file. Defaults to "terraform.tfstate". Ignored when remote state is used.
+-state-out=path                            #Path to write updated state file. By default, the -state path will be used. Ignored when remote state is used.
+-target=resource                           #Targets a resource address
+-var 'foo=bar'                             #Sets a variable in the configuration 
+-var-file=foo                              #Sets a variable in the configuration from a variable vile 
 
 #########
 #destroy 
