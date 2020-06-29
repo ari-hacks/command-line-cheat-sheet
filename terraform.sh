@@ -64,6 +64,11 @@ terraform apply                             #Applies execution plan and builds t
 #########
 terrafrom destroy                           #Takes down all resouces that were created 
 
+# terraform destory flags: terraform init [options] [DIR]
+-auto-approve                              #Destory confirmation won't be shown
+-target                                    #Will destory targeted resources 
+terraform plan -destroy
+
 #########
 #graph 
 #########
