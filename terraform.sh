@@ -15,8 +15,14 @@
 #init 
 ########
 terraform init                              #First command to execute this initializes the working dir, installs Terraform moduels, a backend, provider plugins
-terraform init -input=false                 #Init Terraform w/0 any input 
+# terraform init flags: terraform init [options] [DIR]
+
 terraform init -backend-config=cfg/s3.dev.tf - reconfigure   #Changes backend config during initialization 
+-input=true                                 #Ask for input if necessary. If false, will error if input was required.
+-lock=false                                 #Disable locking of state files during state-related operations.
+-lock-timeout=<duration>                    #Override the time Terraform will wait to acquire a state lock. The default is 0s (zero seconds), which causes immediate failure if the lock is already held by another process.
+-no-color                                   #Disable color codes in the command output.
+-upgrade                                    #Opt to upgrade modules and plugins as part of their respective installation steps. 
 
 ########
 #get 
