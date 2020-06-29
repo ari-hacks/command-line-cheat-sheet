@@ -53,6 +53,7 @@ terraform get -update=true                  #Updates moduels
 terraform plan                              #Scans all *.tf files in your dir and creates the plan - doesn't execute just ensures the config is going to do what is expected.  
 
 
+
 ########
 #apply 
 ########
@@ -76,6 +77,9 @@ dot web.dot -Tsvg -o web.svg]               #Creates a graph and saves it as a .
 terraform validate                          #Checks the syntax, validates the configuration files, and returns any errors 
 terraform fmt                               #Formats configuration files 
 
+# terraform validate flags
+-json                                       #Output in json format
+-no-color                                   #Output won't contian any color
 # terraform fmt flags: terraform fmt [options] [DIR]
 -list=false                                 #Don't lisst the files containing formatting inconsistencies 
 -write=false                                #Don't overwrite the input files. (This is implied by -check or when the input is STDIN.)
