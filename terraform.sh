@@ -23,6 +23,23 @@ terraform init -backend-config=cfg/s3.dev.tf - reconfigure   #Changes backend co
 -lock-timeout=<duration>                    #Override the time Terraform will wait to acquire a state lock. The default is 0s (zero seconds), which causes immediate failure if the lock is already held by another process.
 -no-color                                   #Disable color codes in the command output.
 -upgrade                                    #Opt to upgrade modules and plugins as part of their respective installation steps. 
+-from-module=MODULE-SOURCE                  #The given module will be copied into the target dir before other initialization steps are run
+
+#Backend init flags  
+-force-copy                                 #Rerunning init with an initialized backend updates the dir to use the new backend settings, this could cause a prompt to confirm migration changes. This command is used to bypass that confirmation prompt. 
+-reconfigure                                #Stops migration of an existing state
+-backend=false                              #Skips backend configuration 
+-backend-config=...                         #Used for partial backend configuration 
+
+#Child Module init flags 
+-upgrade                                    #changes default behavior of rerunning init not changing any already-installed modules.It will update all modules to the latest available source code
+-get=false                                  #Skips child module install 
+
+#plugin init flags 
+-upgrade                                    #used to update all providers to the latest acceptable version  
+-get-plugins=false                          #Skips plugin installation 
+-plugin-dir=PATH                            #Skips plugin installation and only loads plugins form the specified dir
+-verify-plugins=false                       #Skips release signature validation when installing. Not recommended. 
 
 ########
 #get 
