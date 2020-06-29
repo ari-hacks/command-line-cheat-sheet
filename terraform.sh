@@ -15,9 +15,9 @@
 #init 
 ########
 terraform init                              #First command to execute this initializes the working dir, installs Terraform moduels, a backend, provider plugins
-# terraform init flags: terraform init [options] [DIR]
 
-terraform init -backend-config=cfg/s3.dev.tf - reconfigure   #Changes backend config during initialization 
+# terraform init flags: terraform init [options] [DIR]
+-backend-config=cfg/s3.dev.tf - reconfigure   #Changes backend config during initialization 
 -input=true                                 #Ask for input if necessary. If false, will error if input was required.
 -lock=false                                 #Disable locking of state files during state-related operations.
 -lock-timeout=<duration>                    #Override the time Terraform will wait to acquire a state lock. The default is 0s (zero seconds), which causes immediate failure if the lock is already held by another process.
@@ -55,10 +55,11 @@ terraform plan                              #Scans all *.tf files in your dir an
 
 
 ########
-#apply 
+#apply and refresh 
 ########
 terraform apply                             #Applies execution plan and builds the stack
-# terraform destory flags: terraform init [options] [DIR]
+terraform refresh                           #Used to reconcile the state Terraform knows about (via its state file) with the real-world infrastructure. 
+# terraform apply and refresh flags
 -backup=path                               #Path to the backup file 
 -compact-warnings                          #Warning messages are shown in compact form
 -lock=true                                 #Lock the state file when its supported
