@@ -101,7 +101,7 @@ terraform fmt                               #Formats configuration files
 # terraform validate flags
 -json                                       #Output in json format
 -no-color                                   #Output won't contian any color
-# terraform fmt flags: terraform fmt [options] [DIR]
+# terraform fmt flags
 -list=false                                 #Don't lisst the files containing formatting inconsistencies 
 -write=false                                #Don't overwrite the input files. (This is implied by -check or when the input is STDIN.)
 -diff                                       #Display diffs of formatting changes
