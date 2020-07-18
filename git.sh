@@ -86,3 +86,30 @@ git commit || echo "Commit failed"
      - git push origin [branch-name]
 7. Comapre and Pull request from github 
 8. Create a new pull request on github 
+
+
+######################
+#Syncing your forked repo to the original repo
+######################
+1. Navigate to the forked repo you want to sync with the original repo
+2. Add the original repo as an upstream repro
+   > git remote add upstream [github url from original repo]
+3. List the currently configured remote repositories
+   > git remote -v
+   This should output:
+   > origin [github/your-username/your-fork] (fetch)
+   > origin [github/your-username/your-fork] (push)
+   > upstream [github/owner-username/original-repo] (fetch)
+   > upstream [github/owner-username/original-repo] (push)
+
+4. Merge the original repo into your fork 
+   1. Navigate to the forked repo
+   2. Fetch all the changes from the original repo(commits to the original repo will be stored in a local branch called upstream/master)
+      > git fetch upstream
+   3. If not already navigate to the master branch
+      > git checkout master
+   4. Merge changes from upstream/master into your local master branch(any conflicts will need to be resolved)
+      > git merge upstream/master
+   5. Now you are up to date locally and can sync your forked github repo with the updates
+      > git push origin master
+        
