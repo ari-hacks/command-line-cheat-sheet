@@ -72,7 +72,8 @@ git commit || echo "Commit failed"
 
 
 ######################
-#Contributing to Open Source  
+#Contributing to Open Source
+#Pull Request 
 ######################
 1. Fork Repo that you want to contriubte to 
 2. run: > git clone [github/your-username/your-fork]
