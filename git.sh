@@ -75,17 +75,20 @@ git commit || echo "Commit failed"
 #Contributing to Open Source  
 ######################
 1. Fork Repo that you want to contriubte to 
-2. git clone [repo url]
-3. git status   #Check the repo is up to date with the master branch 
-4. Create a new branch with:
-   - git checkout -b [branch-name]
-5. Make changes to the repo 
-6. Push changes to branch:
-     - git add .
-     - git commit -m "contributing"
-     - git push origin [branch-name]
-7. Comapre and Pull request from github 
-8. Create a new pull request on github 
+2. run: > git clone [github/your-username/your-fork]
+3. run: > cd [repo-name]
+4. Add base repo as a remote
+   > git remote add upstream [github/owner-username/original-repo]
+5. Create a new branch with:
+   > git checkout -b [branch-name]
+6. Make changes to the repo 
+7. Push changes to branch(not master):
+     > git status #check changed files 
+     > git add . or git add <file-name>
+     > git commit -m "contributing"
+     > git push origin [branch-name]
+8. Select Comapre & pull request from the forked Github repo
+9. Select create a new pull request on Github 
 
 
 ######################
@@ -93,7 +96,7 @@ git commit || echo "Commit failed"
 ######################
 1. Navigate to the forked repo you want to sync with the original repo
 2. Add the original repo as an upstream repro
-   > git remote add upstream [github url from original repo]
+   > git remote add upstream [github/owner-username/original-repo]
 3. List the currently configured remote repositories
    > git remote -v
    This should output:
