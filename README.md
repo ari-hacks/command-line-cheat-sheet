@@ -8,6 +8,7 @@ A place to quickly lookup commands ( bash, git, AWS, Docker, Terraform, Ansible)
 - [x] [Docker](/docker.sh)
 - [x] [Terraform](/terraform.sh) 
 - [ ] [Ansible](/ansible.sh)
+- [x] [Hacking tool cheat sheet from compass security](https://blog.compass-security.com/2019/10/hacking-tools-cheat-sheet/)
 
 ## Additional Resources 
   - [Bash Scripting](https://devhints.io/bash)
