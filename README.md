@@ -3,7 +3,7 @@ A place to quickly lookup commands ( bash, git, AWS, Docker, Terraform, Ansible)
 
 
 - [x] [Bash](/bash.sh)
-- [x] [Git](/git.sh)
+- [x] [Git](/git.sh) (Includes Pull Request and Forked Repo Syncing steps)
 - [x] [AWS](/aws.sh)
 - [x] [Docker](/docker.sh)
 - [x] [Terraform](/terraform.sh) 
