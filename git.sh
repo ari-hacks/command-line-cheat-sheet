@@ -6,7 +6,7 @@
 git init                        #Turn an existing directory into a git repo
 git clone [url]                 #Clone a repo that already exists on Github
 .gitgnore                       #Special file that ignores commits for directories and files named in it 
-git status                      #Shows which files are in the staging area 
+git status                      #Shows which files are in the staging area/working directory
 ######################
 #Configure Tooling
 ######################
@@ -34,7 +34,7 @@ git merge                     #Combines remote tracking branch into current loca
 git push                      #Uploads all local branch commits to GitHub
 git push origin master        #Uploads to master branch 
 igt push origin [branch-name] #Push changes to branch 
-git pull                      #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
+git pull [remote]             #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
 ######################
 #Make Changes 
 ######################
