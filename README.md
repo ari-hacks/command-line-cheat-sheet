@@ -3,7 +3,7 @@ A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ans
 
 
 - [x] [Bash](/bash.sh)
-- [ ] [Vim](vim.sh)
+- [x] [Vim](vim.sh)
 - [x] [Git](/git.sh) (Includes Pull Request and Forked Repo Syncing steps)
 - [x] [AWS](/aws.sh)
 - [x] [Docker](/docker.sh)
