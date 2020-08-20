@@ -116,8 +116,8 @@ terraform providers                        #Tree of providers used by modules in
 #########
 #state 
 #########
-terraform state pull > terraform.tfstate  #Pulls remote state in a local copy 
-terraform state push                      #Pushes state  in remote backend storage 
+terraform state pull > terraform.tfstate   #Pulls remote state in a local copy 
+terraform state push                       #Pushes state  in remote backend storage 
 
 ###########
 #workspaces 

@@ -29,29 +29,29 @@ git branch -m [branch-name]    #Renames branch
 ######################
 #Synchronize changes 
 ######################
-git fetch                     #Downloads all history from the remote tracking branches
-git merge                     #Combines remote tracking branch into current local branch
-git push                      #Uploads all local branch commits to GitHub
-git push origin master        #Uploads to master branch 
-igt push origin [branch-name] #Push changes to branch 
-git pull [remote]             #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
+git fetch                      #Downloads all history from the remote tracking branches
+git merge                      #Combines remote tracking branch into current local branch
+git push                       #Uploads all local branch commits to GitHub
+git push origin master         #Uploads to master branch 
+igt push origin [branch-name]  #Push changes to branch 
+git pull [remote]              #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
 ######################
 #Make Changes 
 ######################
-git log                       #Lists version history for the current branch
-git log --oneline             #Lists version history in one line 
-git log --follow [file]       #Lists version history for a file, including renames
+git log                        #Lists version history for the current branch
+git log --oneline              #Lists version history in one line 
+git log --follow [file]        #Lists version history for a file, including renames
 git diff [first-branch]...[second-branch] #Shows content differences between two branches
-git show [commit]            #Outputs metadata and content changes of the specified commit
-git add [file]               #Snapshots the file in preparation for versioning
-git rm --cached [file]       #Unstages any file in the staging area 
+git show [commit]              #Outputs metadata and content changes of the specified commit
+git add [file]                 #Snapshots the file in preparation for versioning
+git rm --cached [file]         #Unstages any file in the staging area 
 git commit -m "[descriptive message]" #Records file snapshots permanently in version history
 
 ######################
 #Redo commits 
 ######################
-git reset [commit]    #Undoes all commits after [commit], preserving changes locally
-git reset --hard [commit]   #Discards all history and changes back to the specified commit
+git reset [commit]             #Undoes all commits after [commit], preserving changes locally
+git reset --hard [commit]      #Discards all history and changes back to the specified commit
 
 # Note: Changing history can have nasty side effects. If you
 # need to change commits that exist on GitHub (the remote),
