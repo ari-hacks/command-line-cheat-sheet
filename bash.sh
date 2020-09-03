@@ -89,9 +89,12 @@ ps                  #Output snapshot of processes
 ps ax               #Output currently running processes 
 top                 #Output real time processes
 kill <pid>          #Kill process with id pid
+kill -9 <pid>       #Generates a SIGKILL - doesn't check the state of the process and kills the process immediately
 pkill <name>        #Kill process with name name
 killall <name>      #Kill all processes with names beginning name
 ps aux | grep <processes>   #Output running <processes>
+lsof -i TCP:8000 | grep LISTEN   #Searches for a processes running on a specified port 
+
 ######################
 #Network    
 ######################
