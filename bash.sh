@@ -40,7 +40,7 @@ ls -al         #Shows long listing of directory contents including hidden files
 ls -t          #Sort by last modified
 ls -S          #Sort by file size
 ls -1          #One file per line
-ls -m             #Comma-­sep­arated output
+ls -m          #Comma-­sep­arated output
 
 ######################
 #Shortcuts   
@@ -92,7 +92,7 @@ kill <pid>          #Kill process with id pid
 kill -9 <pid>       #Generates a SIGKILL - doesn't check the state of the process and kills the process immediately
 pkill <name>        #Kill process with name name
 killall <name>      #Kill all processes with names beginning name
-ps aux | grep <processes>   #Output running <processes>
+ps aux | grep <processes>        #Output running <processes>
 lsof -i TCP:8000 | grep LISTEN   #Searches for a processes running on a specified port 
 
 ######################
@@ -105,6 +105,6 @@ ssh <username>@<host>   #SSH connection to host with username
 ######################
 #File Permis­sions     
 ######################
-chmod 775 <file>         #Change mode of file to 775
-chmod -R 600 <dir>       #Change permissions of dir and its contents to 600
+chmod 775 <file>             #Change mode of file to 775
+chmod -R 600 <dir>           #Change permissions of dir and its contents to 600
 chown <user>:<group> <file>  #Change ownership of file to user and group - add -R to include a dir's contents 

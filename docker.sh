@@ -15,9 +15,9 @@ docker image rm alpine:3.4    #Delete an image from the local image store
 #######
 #Share 
 #######
-docker pull myimage:1.0        #Pull an image from a registry 
-docker tag myimage:1.0 myrepo/myimage:2.0   #Retag a local image with a new image name and tag 
-docker push myrepo/myimage:2.0      #Push an image to a registry 
+docker pull myimage:1.0                    #Pull an image from a registry 
+docker tag myimage:1.0 myrepo/myimage:2.0  #Retag a local image with a new image name and tag 
+docker push myrepo/myimage:2.0             #Push an image to a registry 
 
 #######
 #Run 
@@ -27,16 +27,16 @@ docker container run --name <name> -p 5000:80 alpine:3.9
 #image, name the running container
 #“web” and expose port 5000 externally,
 #mapped to port 80 inside the container. 
-docker container stop <name>    #Stop a running container through SIGTERM 
-docker container kill <name>    #Stop a running container through SIGKILL 
-docker network ls            #List the networks 
-docker container ls          #List the running containers (add --all to include stopped containers) 
+docker container stop <name>             #Stop a running container through SIGTERM 
+docker container kill <name>             #Stop a running container through SIGKILL 
+docker network ls                        #List the networks 
+docker container ls                      #List the running containers (add --all to include stopped containers) 
 docker container rm -f $(docker ps -aq)  #Delete all running and stopped containers 
-docker container logs --tail 100 <name>     #Print the last 100 lines of a container’s logs
-docker <command> --help                 #For more information on a particular command
-docker container top <name>   #List processes running in a container
+docker container logs --tail 100 <name>  #Print the last 100 lines of a container’s logs
+docker <command> --help                  #For more information on a particular command
+docker container top <name>              #List processes running in a container
 docker container insepct <name> 
-docker container stats <name>  #Shows performance stats 
+docker container stats <name>            #Shows performance stats 
 
 #######
 #Docker Management
