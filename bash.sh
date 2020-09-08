@@ -21,7 +21,7 @@ hostname        #Get the current hostname
 users           #Get the curent users 
 env             #Get all info about the environment
 exit            #Exit Terminal 
-
+last            #Listing of the last users that logged into the system
 
 ######################
 #Directory Operations
