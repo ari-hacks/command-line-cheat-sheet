@@ -11,6 +11,7 @@ whoami          #Display effective username
 finger user     #Show info about user
 df              #Display free disk space
 du              #Display disk usage stats
+du -sh          #Displays total(s - summarize) human(h) readable size in GB 
 free            #Show memory and swap usage
 uname -a        #Show system and kernel
 mount           #Show mounted filesy­stems
