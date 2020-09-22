@@ -9,7 +9,7 @@ A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ans
 - [x] [Docker](/docker.sh)
 - [x] [Terraform](/terraform.sh) 
 - [x] [Ansible](/ansible.sh)
-- [ ] [Kubernetes](/k8s.sh)
+- [x] [Kubernetes](/k8s.sh)
 - [x] [Hacking tool cheat sheet from compass security](https://blog.compass-security.com/2019/10/hacking-tools-cheat-sheet/)
 
 ## Additional Resources 
