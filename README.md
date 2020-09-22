@@ -9,10 +9,12 @@ A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ans
 - [x] [Docker](/docker.sh)
 - [x] [Terraform](/terraform.sh) 
 - [x] [Ansible](/ansible.sh)
+- [ ] [Kubernetes](/k8s.sh)
 - [x] [Hacking tool cheat sheet from compass security](https://blog.compass-security.com/2019/10/hacking-tools-cheat-sheet/)
 
 ## Additional Resources 
   - [Bash Scripting](https://devhints.io/bash)
+  - [Python Scripting]()
   - [Docker File Configuration](https://devhints.io/dockerfile)
   - [Python Quick Reference](https://gist.github.com/ari-hacks/a98d0388c2cc6f356b93e8ebaade1127)
   - [AWS CLI main repo](https://github.com/aws/aws-cli/tree/develop/awscli/examples)
