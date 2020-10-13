@@ -48,6 +48,14 @@ git rm --cached [file]         #Unstages any file in the staging area
 git commit -m "[descriptive message]" #Records file snapshots permanently in version history
 
 ######################
+#Stashing Changes  
+######################
+git stash            #if you need to switch branches but do not want to commit changes yet use stash to save a working copy on your stack while working on another branch
+git stash list       #lists stashes you've stored
+git stash applying   #applies most recent stash to branch 
+git stash apply stash@{2}  #applies version of a stash to branch
+
+######################
 #Redo commits 
 ######################
 git reset [commit]             #Undoes all commits after [commit], preserving changes locally
