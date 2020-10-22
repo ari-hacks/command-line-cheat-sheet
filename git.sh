@@ -35,6 +35,7 @@ git push                       #Uploads all local branch commits to GitHub
 git push origin master         #Uploads to master branch 
 igt push origin [branch-name]  #Push changes to branch 
 git pull [remote]              #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
+
 ######################
 #Make Changes 
 ######################
@@ -60,6 +61,7 @@ git stash apply stash@{2}  #applies version of a stash to branch
 ######################
 git reset [commit]             #Undoes all commits after [commit], preserving changes locally
 git reset --hard [commit]      #Discards all history and changes back to the specified commit
+git reset --hard HEAD^         #Resets to the previous commit before the current head
 
 # Note: Changing history can have nasty side effects. If you
 # need to change commits that exist on GitHub (the remote),
