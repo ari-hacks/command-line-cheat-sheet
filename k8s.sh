@@ -193,6 +193,9 @@ kubectl delete pods,services -l name=myLabel                              # Dele
 kubectl -n my-ns delete pod,svc --all                                      # Delete all pods and services in namespace my-ns,
 # Delete all pods matching the awk pattern1 or pattern2
 kubectl get pods  -n mynamespace --no-headers=true | awk '/pattern1|pattern2/{print $1}' | xargs  kubectl delete -n mynamespace pod
+kubectl delete --all pods --namespace=foo   #Delete all pods in given namespace
+kubectl delete --all deployments --namespace=foo    #Delete all deployments in 
+
 
 ###########
 #Interacting
