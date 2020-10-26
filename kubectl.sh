@@ -244,10 +244,21 @@ kubectl taint nodes foo dedicated=special-user:NoSchedule
 3. View Deployment: > kubectl get deployment
 4. Scale Deployment: > kubectl scale deployment --replicas 2 <name>
 5. List pods to check they are running: > kubectl get pods
-6. Expose to internet: kubectl expose deployment <name> --port=80 --type=LoadBalancer
-7. View Service created: > kubectl get services or > kubectl get service -o wide
-8. If External-IP is <pending> state run: > kubectl describe svc <service-name> check under events. If none run a patch: > kubectl patch svc test -p '{"spec":{"type": "LoadBalancer","externalIPs":["127.0.0.1"]}}'
-9. Configure Cloud controller Manager to see External IP #TODO
-10. Cleanup deployments: > kubectl delete deployment <name>
-11. Cleanup Services: > kubectl delete svc <name>
+6. run : > POD_NAME=<pod-name>
+7. run: > echo $POD_NAME
+8. monitoring: 
+  - curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME
+  - kubectl logs $POD_NAME
+  - kubectl exec $POD_NAME env
+  - kubectl exec -ti $POD_NAME bash
+9. Open container bash: > kubectl exec -ti $POD_NAME bash and run app: > curl http://localhost:80
+10. run: > exit
+11. Cleanup deployments: > kubectl delete deployment <name>
+12. Cleanup Services: > kubectl delete svc <name>
+
+#Expose to internet: 
+1. kubectl expose deployment <name> --port=80 --type=LoadBalancer
+2. View Service created: > kubectl get services or > kubectl get service -o wide
+3. Configure Cloud controller Manager to see External IP #TODO
+
 
