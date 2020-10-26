@@ -236,3 +236,18 @@ kubectl cluster-info dump --output-directory=/path/to/cluster-state   # Dump cur
 kubectl taint nodes foo dedicated=special-user:NoSchedule
 
 
+######################
+#Running a simple container
+######################
+1. Create a deployment: > kubectl create deployment --image nginx <name>
+2. List pods: > kubectl get pods
+3. View Deployment: > kubectl get deployment
+4. Scale Deployment: > kubectl scale deployment --replicas 2 <name>
+5. List pods to check they are running: > kubectl get pods
+6. Expose to internet: kubectl expose deployment <name> --port=80 --type=LoadBalancer
+7. View Service created: > kubectl get services or > kubectl get service -o wide
+8. If External-IP is <pending> state run: > kubectl describe svc <service-name> check under events. If none run a patch: > kubectl patch svc test -p '{"spec":{"type": "LoadBalancer","externalIPs":["127.0.0.1"]}}'
+9. Configure Cloud controller Manager to see External IP #TODO
+10. Cleanup deployments: > kubectl delete deployment <name>
+11. Cleanup Services: > kubectl delete svc <name>
+
