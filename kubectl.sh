@@ -239,7 +239,7 @@ kubectl taint nodes foo dedicated=special-user:NoSchedule
 ######################
 #Running a simple container
 ######################
-1. create a deployment: > kubectl create deployment --image nginx <name>
+1. create a deployment: > kubectl create deployment <deployment-name> --image nginx <name>
 2. list pods: > kubectl get pods
 3. view Deployment: > kubectl get deployment
 4. scale Deployment: > kubectl scale deployment --replicas 2 <name>

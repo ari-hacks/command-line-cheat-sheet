@@ -1,5 +1,5 @@
 # command-line-cheat-sheet
-A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ansible)
+A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ansible, kubectl)
 
 
 - [x] [Bash](/bash.sh)
