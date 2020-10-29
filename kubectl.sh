@@ -235,6 +235,22 @@ kubectl cluster-info dump --output-directory=/path/to/cluster-state   # Dump cur
 # If a taint with that key and effect already exists, its value is replaced as specified.
 kubectl taint nodes foo dedicated=special-user:NoSchedule
 
+##########
+#kind
+##########
+brew install kind
+
+kind create cluster
+
+kind build node-image
+kind create cluster --image kindest/node:latest
+
+kind get clusters
+
+kubectl cluster-info --context <name>
+
+kind delete cluster
+
 
 ######################
 #Running a simple container
