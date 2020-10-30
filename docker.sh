@@ -37,7 +37,7 @@ docker <command> --help                  #For more information on a particular c
 docker container top <name>              #List processes running in a container
 docker container insepct <name> 
 docker container stats <name>            #Shows performance stats 
-
+docker container prune                   #Removes unused containers 
 #######
 #Docker Management
 #######
