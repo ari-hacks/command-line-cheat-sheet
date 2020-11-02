@@ -249,7 +249,7 @@ kind get clusters
 
 kubectl cluster-info --context <name>
 
-kind delete cluster
+kind delete cluster --name    #if name flag is not specificed, kind uses the defualt cluster context name kind and deletes that cluster 
 
 
 ######################
