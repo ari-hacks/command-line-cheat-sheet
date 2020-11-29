@@ -18,12 +18,12 @@ ZQ              #Quit without checking changes
 #########
 #Navigating 
 ########
-h j k l	        #Arrow keys
-<C-U> / <C-D>	  #Half-page up/down
-<C-B> / <C-F>	  #Page up/down
-0 (zero)	      #Start of line
-^	              #Start of line (after whitespace)
-$	              #End of line
+h j k l	          #Arrow keys
+<C-U> / <C-D>	    #Half-page up/down
+<C-B> / <C-F>	    #Page up/down
+0 (zero)	        #Start of line
+^	                #Start of line (after whitespace)
+$	                #End of line
 
 #########
 #Editing 
