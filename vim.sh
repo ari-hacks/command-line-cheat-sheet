@@ -19,17 +19,17 @@ ZQ              #Quit without checking changes
 #Navigating 
 ########
 h j k l	        #Arrow keys
-<C-U> / <C-D>	#Half-page up/down
-<C-B> / <C-F>	#Page up/down
-0 (zero)	    #Start of line
-^	            #Start of line (after whitespace)
-$	            #End of line
+<C-U> / <C-D>	  #Half-page up/down
+<C-B> / <C-F>	  #Page up/down
+0 (zero)	      #Start of line
+^	              #Start of line (after whitespace)
+$	              #End of line
 
 #########
 #Editing 
 ########
-a               #Append
-A               #Append from end of line
+a             #Append
+A             #Append from end of line
 i	            #Insert
 o	            #Next line
 O	            #Previous line
@@ -45,15 +45,15 @@ u	            #Undo changes
 #########
 #Exiting insert mode  
 ########
-Esc / <C-[>	    #Exit insert mode
+Esc / <C-[>	  #Exit insert mode
 <C-C>	        #Exit insert mode, and abort current command
 
 #########
 #Clipboard 
 ########
 x	            #Delete character
-dd	            #Delete line (Cut)
-yy	            #Yank line (Copy)
+dd	          #Delete line (Cut)
+yy	          #Yank line (Copy)
 p	            #Paste
 P	            #Paste before
 "*p / "+p	    #Paste from system clipboard
