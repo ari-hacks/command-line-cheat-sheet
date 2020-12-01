@@ -13,6 +13,7 @@ A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ans
 - [x] [Hacking tool cheat sheet from compass security](https://blog.compass-security.com/2019/10/hacking-tools-cheat-sheet/)
 
 ## Additional Resources 
+  - [FreeCodeCamp Linux Commnads Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/)
   - [Bash Scripting](https://devhints.io/bash)
   - [Docker File Configuration](https://devhints.io/dockerfile)
   - [Python Quick Reference](https://gist.github.com/ari-hacks/a98d0388c2cc6f356b93e8ebaade1127)
