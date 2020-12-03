@@ -8,3 +8,4 @@
 5. Install go modules: > go mod init <project-name>
 6. Build: > go install <project-name>
 7. Now you can run <project-name> to use the Cli
+8. Add commands: > cobra add <command-name>
