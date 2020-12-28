@@ -11,7 +11,7 @@ A place to quickly lookup commands ( bash, Vim, git, AWS, Docker, Terraform, Ans
 - [x] [Ansible](/ansible.sh)
 - [x] [Kubernetes](/kubectl.sh) (Includes steps for running a simple container)
 - [x] [Hacking tool cheat sheet from compass security](https://blog.compass-security.com/2019/10/hacking-tools-cheat-sheet/)
-- [x] [A Cloud Guru K8s Cheat Sheet](/)
+- [x] [A Cloud Guru K8s Cheat Sheet](/acloudguru-k8s-cheatsheet/)
 
 ## Additional Resources and References 
   - [spf13/cobra Quick Setup](/spf13-cobra.sh)
