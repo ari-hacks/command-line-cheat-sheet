@@ -109,4 +109,4 @@ ssh <username>@<host>   #SSH connection to host with username
 chmod 775 <file>             #Change mode of file to 775
 chmod -R 600 <dir>           #Change permissions of dir and its contents to 600
 chown <user>:<group> <file>  #Change ownership of file to user and group - add -R to include a dir's contents 
-chmod +x <file-name>.sh.     #Sets executable flag without changing permissions 
+chmod +x <file-name>.sh     #Sets executable flag without changing permissions 
