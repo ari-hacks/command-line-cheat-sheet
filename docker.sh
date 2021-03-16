@@ -38,6 +38,8 @@ docker container top <name>              #List processes running in a container
 docker container insepct <name> 
 docker container stats <name>            #Shows performance stats 
 docker container prune                   #Removes unused containers 
+docker builder prune                     #Removes build cache
+
 #######
 #Docker Management
 #######
