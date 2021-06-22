@@ -32,7 +32,7 @@ git branch -m [branch-name]    #Renames branch
 git fetch                      #Downloads all history from the remote tracking branches
 git merge                      #Combines remote tracking branch into current local branch
 git push                       #Uploads all local branch commits to GitHub
-git push origin master         #Uploads to master branch 
+git push origin main         #Uploads to main branch 
 igt push origin [branch-name]  #Push changes to branch 
 git pull [remote]              #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
 
@@ -93,7 +93,7 @@ git commit || echo "Commit failed"
 5. Create a new branch with:
    > git checkout -b [branch-name]
 6. Make changes to the repo 
-7. Push changes to branch(not master):
+7. Push changes to branch(not main):
      > git status #check changed files 
      > git add . or git add <file-name>
      > git commit -m "contributing"
@@ -118,12 +118,12 @@ git commit || echo "Commit failed"
 
 4. Merge the original repo into your fork 
    1. Navigate to the forked repo
-   2. Fetch all the changes from the original repo(commits to the original repo will be stored in a local branch called upstream/master)
+   2. Fetch all the changes from the original repo(commits to the original repo will be stored in a local branch called upstream/main)
       > git fetch upstream
-   3. If not already navigate to the master branch
-      > git checkout master
-   4. Merge changes from upstream/master into your local master branch(any conflicts will need to be resolved)
-      > git merge upstream/master
+   3. If not already navigate to the main branch
+      > git checkout main
+   4. Merge changes from upstream/main into your local main branch(any conflicts will need to be resolved)
+      > git merge upstream/main
    5. Now you are up to date locally and can sync your forked github repo with the updates
-      > git push origin master
+      > git push origin main
         
