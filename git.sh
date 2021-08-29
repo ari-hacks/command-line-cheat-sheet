@@ -31,9 +31,10 @@ git branch -m [branch-name]    #Renames branch
 ######################
 git fetch                      #Downloads all history from the remote tracking branches
 git merge                      #Combines remote tracking branch into current local branch
+git rebase                     #Integrates changes from one branch onto another
 git push                       #Uploads all local branch commits to GitHub
 git push origin main         #Uploads to main branch 
-igt push origin [branch-name]  #Push changes to branch 
+git push origin [branch-name]  #Push changes to branch 
 git pull [remote]              #Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge 
 
 ######################
