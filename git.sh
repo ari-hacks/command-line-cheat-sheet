@@ -23,8 +23,8 @@ git checkout -b [branch-name]  #Creates and switches to a branch
 git merge [branch]             #Combines the specified branch’s history into the current branch. This is usually done in pull requests,but is an important Git operation.
 git branch -d [branch-name]    #Deletes the specified branch
 git branch -D [branch-name]    #Force Delete even if branch is unmerged 
-git branch -a                  #Checks branches 
-git branch -m [branch-name]    #Renames branch 
+git branch -a                  #list both remote-tracking and local branches 
+git branch -m [branch-name]    #move/rename a branch and its reflog
 
 ######################
 #Synchronize changes 
